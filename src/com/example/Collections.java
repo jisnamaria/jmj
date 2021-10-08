@@ -84,7 +84,5 @@ public class Collections{
         difference_data.removeAll(set2);
         System.out.print("Difference of set1 and set2 is:");
         System.out.println(difference_data);
-
-
     }
 }
