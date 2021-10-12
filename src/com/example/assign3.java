@@ -4,6 +4,7 @@ package com.example;
 // in a folder(and sub-folders)
 
 import java.io.File;
+import java.util.*;
 
 public class assign3 {
     private static long getFolderSize(File folder)
@@ -60,11 +61,15 @@ public class assign3 {
     {
         // Provide full path for directory(change
         // accordingly)
-        String maindirpath
-                = "C:\\Users\\user\\Desktop\\FLYCATCH";
+//        String maindirpath
+//                = "C:\\Users\\user\\Desktop\\FLYCATCH";
 
         // File object
-        File maindir = new File(maindirpath);
+        Scanner sc= new Scanner(System.in); //System.in is a standard input stream
+        System.out.print("Enter a path: ");
+        String str= sc.nextLine();
+//        File maindir = new File(maindirpath);
+        File maindir = new File(str);
 
         if (maindir.exists() && maindir.isDirectory()) {
 
